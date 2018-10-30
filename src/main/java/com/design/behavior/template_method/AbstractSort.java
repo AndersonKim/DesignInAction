@@ -1,4 +1,4 @@
-package java.com.design.behavior.template_method;
+package com.design.behavior.template_method;
 
 public abstract class AbstractSort {
     protected abstract void sort(int[] array);

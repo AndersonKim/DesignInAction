@@ -1,4 +1,4 @@
-package java.com.design.behavior.template_method;
+package com.design.behavior.template_method;
 
 public class Client {
 	public static void main(String args[]){
