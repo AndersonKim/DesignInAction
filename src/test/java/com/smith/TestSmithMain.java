@@ -1,6 +1,10 @@
 package com.smith;
 
 
+import com.smith.round.BattleGround;
+import com.smith.round.Monster;
+import com.smith.round.Player;
+
 import java.util.Random;
 
 /**
@@ -10,25 +14,9 @@ import java.util.Random;
  */
 public class TestSmithMain {
 
-    private int Monster;
-    private int Tree;
-    private int Mineral;
-
-    public Item[] goForAdventure(Slave character, Envirement target, Weaponry tool){
-
-        //1.init target monster / tree / mineral
-        Slave[] adv_objs=GameBuilder.initSlaveByCharAndTool(character,tool);
-
-        //2.character get materials from local things
-        for (Object obj:adv_objs) {
-            character.haverst(adv_objs);
-        }
-
-        //3.return by hand
-
-
-
-        Item[] objs=new Item[Monster*3+Tree*3+Mineral*3];
-        return objs;
+    public static void main(String args[]){
+        Player p=new Player(10,1,"tom");
+        Monster m=new Monster(10,1,"jack");
+        BattleGround.battleWithMonster(p,m);
     }
 }

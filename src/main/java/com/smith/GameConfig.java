@@ -7,8 +7,8 @@ package com.smith;
 public class GameConfig {
 
     /*********************************************adventure*********************************************/
-    public static final Integer MONSTER_OUTPUT_EFF = 3;
-    public static final Integer TREE_OUTPUT_EFF = 3;
-    public static final Integer MINERAL_OUTPUT_EFF = 3;
+    public static final Integer MONSTER_OUTPUT = 3;
+    public static final Integer TREE_OUTPUT = 3;
+    public static final Integer MINERAL_OUTPUT = 3;
 
 }
