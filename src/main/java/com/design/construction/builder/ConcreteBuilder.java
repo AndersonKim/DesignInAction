@@ -1,4 +1,4 @@
-package java.com.design.construction.builder;
+package com.design.construction.builder;
 
 class ConcreteBuilder extends Builder {
     private Product product = new Product();

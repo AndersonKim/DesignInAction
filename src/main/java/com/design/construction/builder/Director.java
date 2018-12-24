@@ -1,4 +1,4 @@
-package java.com.design.construction.builder;
+package com.design.construction.builder;
 
 public class Director {
     private Builder builder = new ConcreteBuilder();
