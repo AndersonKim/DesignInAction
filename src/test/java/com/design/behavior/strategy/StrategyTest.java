@@ -15,6 +15,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class StrategyTest {
+
     @Test
     public void testProtoTypeStrategy(){
         Context context=new Context(new StrategyA());
