@@ -1,4 +1,4 @@
-package com.design.behavior.template_method;
+package com.design.behavior.template_method.prototype;
 
 import java.util.Arrays;
 
