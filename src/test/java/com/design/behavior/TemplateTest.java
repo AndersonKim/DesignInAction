@@ -1,8 +1,11 @@
-package com.design.behavior.template_method;
+package com.design.behavior;
 
 import com.design.behavior.template_method.aid.ABCVerifyService;
 import com.design.behavior.template_method.aid.AbstractVerifyService;
 import com.design.behavior.template_method.aid.BOCVerifyService;
+import com.design.behavior.template_method.driving.DrivingBike;
+import com.design.behavior.template_method.driving.DrivingCar;
+import com.design.behavior.template_method.driving.DrivingTemplate;
 import com.design.behavior.template_method.prototype.AbstractSort;
 import com.design.behavior.template_method.prototype.ConcreteSort;
 import com.design.behavior.template_method.prototype.DesSort;
@@ -13,6 +16,20 @@ import org.junit.Test;
  * at 2019/1/16
  */
 public class TemplateTest {
+
+    @Test
+    public void  testDrivingTemplate(){
+        //带有钩子的模板方法
+        System.out.println("===============test driving car===============");
+
+        DrivingCar drivingCar=new DrivingCar();
+        drivingCar.drive();
+
+        System.out.println("===============test driving bike===============");
+
+        DrivingBike drivingBike=new DrivingBike();
+        drivingBike.drive();
+    }
 
     @Test
     public void testProtoTypeTemplate(){

@@ -1,4 +1,4 @@
-package com.design.construction.builder;
+package com.design.construction.builder.prototype;
 
 abstract class Builder {
     public abstract void setPart(String arg1, String arg2);

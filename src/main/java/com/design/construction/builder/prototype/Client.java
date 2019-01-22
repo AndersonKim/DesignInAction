@@ -1,4 +1,4 @@
-package com.design.construction.builder;
+package com.design.construction.builder.prototype;
 
 public class Client {
     public static void main(String[] args){

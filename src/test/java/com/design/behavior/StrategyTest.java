@@ -1,4 +1,4 @@
-package com.design.behavior.strategy;
+package com.design.behavior;
 
 import com.design.behavior.strategy.comparator.CompareItem;
 import com.design.behavior.strategy.comparator.CompareItemNameComparator;

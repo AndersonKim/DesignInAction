@@ -17,6 +17,8 @@ public class TestSmithMain {
     public static void main(String args[]){
         Player p=new Player(10,1,"tom");
         Monster m=new Monster(10,1,"jack");
+
+
 //        BattleGround.battleWithMonster(p,m);
     }
 }

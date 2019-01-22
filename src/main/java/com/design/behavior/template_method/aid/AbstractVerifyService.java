@@ -22,15 +22,6 @@ public abstract class AbstractVerifyService {
         String verifyUrl=getVerifyUrl();
         sendDataToVerify(toVerifyData,verifyUrl);
     }
-    /**
-     * edit by AndersonKim
-     * @Date：2019/1/16
-     * @Description：向认证第三方的地址发送数据
-     */
-    protected final void sendDataToVerify(String toVerifyData, String verifyUrl){
-        System.out.println("to verified data is : "+toVerifyData);
-        System.out.println("upload url is : "+verifyUrl);
-    }
 
     /**
      * edit by AndersonKim
@@ -49,6 +40,17 @@ public abstract class AbstractVerifyService {
     /**
      * edit by AndersonKim
      * @Date：2019/1/16
+     * @Description：向认证第三方的地址发送数据
+     */
+    protected final void sendDataToVerify(String toVerifyData, String verifyUrl){
+        System.out.println("to verified data is : "+toVerifyData);
+        System.out.println("upload url is : "+verifyUrl);
+    }
+
+
+    /**
+     * edit by AndersonKim
+     * @Date：2019/1/16
      * @Description：接收到第三方认证成功的回调信息转换后返回给业务系统
      * 1.接收第三方的请求后解析成业务系统需要的格式（可能发生变更点：第三方请求中的数据的格式）
      * 2.将认证结果的信息返回给需要的业务系统
@@ -61,17 +63,18 @@ public abstract class AbstractVerifyService {
     /**
      * edit by AndersonKim
      * @Date：2019/1/16
+     * @Description：格式化从第三方接收到的数据为业务系统需要的格式
+     */
+    protected abstract String formatReceiveData(String data);
+
+    /**
+     * edit by AndersonKim
+     * @Date：2019/1/16
      * @Description：将认证结果返回给内部的业务系统
      */
     protected final void sendDataToInnerSystem(String formatData){
         System.out.println("send data to inner system : "+formatData);
     }
 
-    /**
-     * edit by AndersonKim
-     * @Date：2019/1/16
-     * @Description：格式化从第三方接收到的数据为业务系统需要的格式
-     */
-    protected abstract String formatReceiveData(String data);
 
 }
