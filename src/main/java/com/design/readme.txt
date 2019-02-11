@@ -48,7 +48,7 @@
 
 策略模式（Strategy）；done
 
-职责链模式（Chain of Responsibility）；
+职责链模式（Chain of Responsibility）；done
 
 命令模式（Command）；
 
