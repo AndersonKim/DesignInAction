@@ -34,7 +34,7 @@ public class StrategyTest {
         CompareItem[] items={a,b};
         Arrays.sort(items,new CompareItemNumComparator());
 
-        List<CompareItem> compareItemList=new ArrayList<>();
+        List<CompareItem> compareItemList=new ArrayList<CompareItem>();
         compareItemList.add(a);
         compareItemList.add(b);
         Collections.sort(compareItemList,new CompareItemNameComparator());

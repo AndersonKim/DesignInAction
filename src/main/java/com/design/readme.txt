@@ -24,7 +24,7 @@
 
 外观模式（Facade）；
 
-适配器模式（Adapter）；
+适配器模式（Adapter）；done
 
 代理模式（Proxy）；
 
@@ -44,7 +44,7 @@
 
 观察者模式（Observer）；
 
-状态模式（State）；
+状态模式（State）；done
 
 策略模式（Strategy）；done
 
